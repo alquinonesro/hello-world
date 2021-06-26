@@ -1,2 +1,155 @@
-<h1>Hello, World!<h1>
+<!DOCTYPE html>
+<html>
+<div id="canvasWrapper">
+  <div id='canvas'>
+
+    <head>
+      <title>Alejandro</title>
+    </head>
+    <div class="page">
+      <div id="headerWrapper">
+        <header>Alejandro Quiñones Roa</header>
+      </div>
+      <div id='frontimageWrapper'>
+        <img src='guitar.jpg' alt='front image'>
+      </div>
+      
+      <div id='rowheaderWrapper'></div>
+      <div id="navMenu">
+        <ul>
+          <li>About</li>
+          <li>Exhibitions</li>
+          <li>Works</li>
+        </ul>
+      </div>
+
+      <div id='rowfooterWrapper'></div>
+      <div id="footerWrapper">
+        <footer>
+          <p>bandcamp</p>
+          <p>soundcloud</p>
+          <p>instagram</p>
+        </footer>
+      </div>
+
+      <body>
+
+        <div id="about" onclick="display()">
+          <h1>About</h1>
+          <p>Alejandro Quiñones Roa is an audiovisual artist and programmer (...)</p>
+        </div>
+        <div id="exhibitions">
+          <h1>Exhibitions</h1>
+          <p>(Some text about Exhibitions)</p>
+        </div>
+        <div id="works">
+          <h1>Works</h1>
+          <img src='' alt='Image of a work'>
+          <img src='' alt='Image of another work'>
+        </div>
+      </body>
+      
+    </div>
+  </div>
+</div>
+
+<style>
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  div {
+    display: block;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: omnes-pro; */
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4em;
+    text-transform: none;
+    letter-spacing: .1em;
+    font-size: 14px;
+  }
+
+  body {
+    background-color: #fff;
+    color: #222;
+  }
+
+  body {
+    margin: 0;
+  }
+  .page{
+    display: grid; 
+    grid-template-columns: [one] 200px [two] 100px ;
+  
+  }
+
+
+  #canvas {
+    padding: 80px;
+    min-width: 900px;
+  }
+
+  #canvasWrapper {
+    max-width: 1496px;
+  }
+
+  #navMenu ul {
+    height: 0;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  #frontimageWrapper {
+    padding-top: 0px;
+    padding-left: 200px;
+    position: absolute;
+  }
+
+  #headerWrapper {
+    width: 200px;
+    position: absolute;
+  }
+
+  #rowheaderWrapper {
+    position: relative;
+    width: 200px;
+    height: 20px;
+  }
+
+  #about {
+    visibility: hidden;
+  }
+
+  #exhibitions {
+    visibility: hidden;
+  }
+
+  #works {
+    visibility: hidden;
+  }
+
+  #footerWrapper {
+    width: 1000px;
+    background-color: rgb(208, 255, 0);
+  }
+
+  footer {
+    color: #111;
+    display: inline;
+    text-decoration: none;
+    text-align: right;
+    overflow: hidden;
+  }
+
+  footer p {
+    text-align: right;
+    text-decoration: none;
+  }
+</style>
+
+</html>
   
